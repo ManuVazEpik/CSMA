@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSMA </title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="icon" type="image/png" href="images/Csma.png">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 style="margin-top: 5%">Simulación CSMA / CA</h1>
+        <div class="row">
+          <div class="four columns" style="margin-top: 5%">
+            <img src="images/pc1.png"> 
+            <h4>PC1</h4>
+            <input type="button" value="Enviar mensaje a PC2" onclick="setTimeout('mensaje(1)', 3000)">
+            <br>
+            <input type="button" value="Enviar mensaje a PC3" onclick="setTimeout('mensaje(2)', 3000)">
+            <div id="1"></div>
+          </div>
+
+
+          <div class="four columns" style="margin-top: 5%">
+            <img src="images/pc1.png">    
+            <h4>PC2</h4>  
+            <input type="button" value="Enviar mensaje a PC1" onclick="setTimeout('mensaje(3)', 3000)">
+            <br>
+            <input type="button" value="Enviar mensaje a PC3" onclick="setTimeout('mensaje(4)', 3000)">     
+            <div id="2"></div>                         
+          </div>
+
+
+          <div class="four columns" style="margin-top: 5%">
+            <img src="images/pc1.png">
+            <h4>PC3</h4> 
+            <input type="button" value="Enviar mensaje a PC1" onclick="setTimeout('mensaje(5)', 3000)">
+            <br>
+            <input type="button" value="Enviar mensaje a PC2" onclick="setTimeout('mensaje(6)', 3000)">
+            <div id="3"></div>
+          </div>
+        </div>
+        <div class="row">
+            <!-- Loader 4 -->
+            <div class="one-third column">
+                <svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+            <circle fill="#fff" stroke="none" cx="6" cy="50" r="6">
+            <animate
+                attributeName="opacity"
+                dur="1s"
+                values="0;1;0"
+                repeatCount="indefinite"
+                begin="0.1"/>    
+            </circle>
+            <circle fill="#fff" stroke="none" cx="26" cy="50" r="6">
+            <animate
+                attributeName="opacity"
+                dur="1s"
+                values="0;1;0"
+                repeatCount="indefinite" 
+                begin="0.2"/>       
+            </circle>
+            <circle fill="#fff" stroke="none" cx="46" cy="50" r="6">
+            <animate
+                attributeName="opacity"
+                dur="1s"
+                values="0;1;0"
+                repeatCount="indefinite" 
+                begin="0.3"/>     
+            </circle>
+            </svg>
+            </div>
+            <div class="one-third column" style="margin-top: 10%">
+                
+            </div>
+            <div class="one-third column">
+                <svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+            <circle fill="#fff" stroke="none" cx="6" cy="50" r="6">
+            <animate
+                attributeName="opacity"
+                dur="1s"
+                values="0;1;0"
+                repeatCount="indefinite"
+                begin="0.1"/>    
+            </circle>
+            <circle fill="#fff" stroke="none" cx="26" cy="50" r="6">
+            <animate
+                attributeName="opacity"
+                dur="1s"
+                values="0;1;0"
+                repeatCount="indefinite" 
+                begin="0.2"/>       
+            </circle>
+            <circle fill="#fff" stroke="none" cx="46" cy="50" r="6">
+            <animate
+                attributeName="opacity"
+                dur="1s"
+                values="0;1;0"
+                repeatCount="indefinite" 
+                begin="0.3"/>     
+            </circle>
+            </svg>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="js/logica.js"></script>
+</body>
+</html>
